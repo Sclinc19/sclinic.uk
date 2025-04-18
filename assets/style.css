@@ -4,14 +4,6 @@ body, h1, p, ul {
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    text-align: center;
-}
-
 /* Logo */
 .logo {
     width: 120px;
@@ -48,9 +40,109 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-/* Footer */
+/* Header - stick to top */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Make space for header so content doesn't overlap */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 100px; /* Adjust based on your header height */
+    padding-bottom: 70px; /* Space for footer */
+    min-height: 100vh;
+}
+
+/* Footer - stick to bottom */
 footer {
-    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+/* Hero Section with image */
+.about-hero {
+    background: url('assets/about-banner.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+}
+
+.about-hero .hero-text {
+    z-index: 1;
+    position: relative;
+}
+
+/* About Intro Section */
+.about-intro {
+    background: #fff;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* What We Offer Section */
+.what-we-offer {
+    background: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.offer-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.offer-item {
+    width: 30%;
+    min-width: 250px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    text-align: center;
+}
+
+.offer-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.offer-item h3 {
+    margin-top: 15px;
+    color: #0077b6;
+}
+
+.offer-item p {
+    margin-top: 10px;
+    color: #444;
 }

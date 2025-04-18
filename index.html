@@ -1,33 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sclinic - Home</title>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/style new.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+</head>
+
+<body>
     <header>
-        <img src="assets/logo.png" alt="Sclinic Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact - Vishal</a></li>
-            </ul>
-        </nav>
+        <img src="assets/Sclinic.png" alt="Sclinic Logo">
+        <h1>Physiotherapy Services at Home and Online</h1>
+        <p>Get expert care for neurological, musculoskeletal, and elderly rehabilitation.</p>
+        <a class="cta" href="#contact">Book an Appointment</a>
     </header>
 
-    <section class="hero">
-        <h1>Welcome to Sclinic</h1>
-        <p>Your trusted partner for [your business service].</p>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#areas">Areas Covered</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
+        <h2>Service Highlights</h2>
+        <ul>
+            <div class="service-card" data-aos="fade-up">
+                <img src="assets/Home-visit-physio.jpg" alt="Older Adult Physiotherapy">
+                <div class="service-text">
+                    <h3>🏡 Physiotherapy for Older Adults at Home</h3>
+                    <p>We provide personalized in-home physiotherapy designed to improve mobility, prevent falls, and
+                        promote independence among elderly individuals. Each plan is tailored to their needs with
+                        careful monitoring and support.</p>
+                    <a href="#contact" class="cta">Get in Touch</a>
+                </div>
+            </div>
+
+            <li><strong>🧬 Neurological Physiotherapy:</strong> At-home therapy for stroke, Parkinson's, MS, and more.
+                <a href="#contact">Get in Touch</a>
+            </li>
+            <li><strong>📲 Teleconsultation Services:</strong> Virtual assessments and exercise prescriptions. <a
+                    href="#contact">Get in Touch</a></li>
+            <li><strong>💉 Cupping Therapy at Home:</strong> Relieves muscle tension and improves circulation. <a
+                    href="#contact">Get in Touch</a></li>
+            <li><strong>✨ Dry Needling Therapy at Home:</strong> Reduces pain and restores muscle function. <a
+                    href="#contact">Get in Touch</a></li>
+        </ul>
+    </section>
+
+    <section id="areas">
+        <h2>Coverage Area</h2>
+        <p>We provide home-based services in Harrow, Ealing, Brent, Barnet, Hillingdon, and selected parts of East
+            London.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>With over 7 years of experience, our lead physiotherapist delivers compassionate, expert care for
+            neurological, orthopedic, and elderly clients at home and online.</p>
+
+        <h3>Patient Feedback</h3>
+        <blockquote>"After my stroke, the home visits from Sclinic made a huge difference. I regained my balance and
+            confidence!" – Mr. A, Harrow</blockquote>
+        <blockquote>"Professional, gentle, and effective care. The dry needling therapy relieved my back pain within
+            days!" – Ms. R, Ealing</blockquote>
+
+        <h3>FAQs</h3>
+        <ul>
+            <li><strong>Do I need a referral?</strong> No referral is needed. You can book directly.</li>
+            <li><strong>What do I need for an online session?</strong> A smartphone or laptop with a camera and a stable
+                internet connection.</li>
+            <li><strong>Are home visits safe?</strong> Yes. We follow strict hygiene, PPE, and COVID-safe protocols.
+            </li>
+            <li><strong>How many sessions will I need?</strong> We'll assess and create a personalized plan based on
+                your condition.</li>
+        </ul>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>Stay updated with expert advice, tips, and the latest research in physiotherapy and wellness. <em>Coming
+                Soon!</em></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> 07359 615277</p>
+        <p><strong>Email:</strong> help.sclinicuk@gmail.com</p>
+        <form action="https://formspree.io/f/mdkerwvl" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <p>© 2025 Sclinic. All rights reserved.</p>
+        <p>&copy; 2025 Sclinic.uk | "Your Health, Our Mission." | Privacy Policy</p>
     </footer>
 
 </body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init();
+  });
+</script>
 </html>
