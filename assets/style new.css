@@ -172,3 +172,83 @@ footer {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+
+.contact-class {
+    background: #f1f1f1;
+}
+
+.contact-class form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contact-class input,
+.contact-class textarea,
+.contact-class button {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* Responsive layout for service cards and general layout */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    header img {
+        height: 160px;
+        width: auto;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .service-card,
+    .service-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .service-card img,
+    .service-box img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .service-text,
+    .service-box-content {
+        text-align: center;
+    }
+
+    .cta {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
