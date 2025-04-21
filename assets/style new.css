@@ -12,7 +12,7 @@ body {
 header {
     padding: 2rem 1rem;
     text-align: center;
-    color: white;
+    color: rgb(227, 227, 231);
 }
 
 header img {
@@ -39,7 +39,7 @@ nav {
     gap: 2rem;
     background: #f9f9f9;
     padding: 1.2rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(227, 220, 220, 0.05);
 }
 
 nav a {
